@@ -6,12 +6,12 @@ obj Dog {
     }
 }
 
-fn makeItSpeak(s Speaker) {
-    print s.speak()
-}
-
 trait Speaker {
     fn speak() => string
+}
+
+fn makeItSpeak(s Speaker) {
+    print s.speak()
 }
 
 fn main() {

@@ -8,7 +8,7 @@ fn main {
         print "hehe"
     }
 
-    loop 10..50 {
+    loop 10..50 { // ou loop x..y
         print "Hehe"
     }
 
@@ -37,11 +37,11 @@ fn main {
     } until x == 10
 
     let numbers = [1, 2, 3, 4, 5]
-    for let x, n = range numbers {
+    for x int, n in numbers { // uso de let opcional
         print "[{}]: {}\n", x, n
     }
 
-    for let i = 10; i > 0; i /= 2{
+    for let i = 10; i > 0; i /= 2 {
         print "{}\n", i
     }
 

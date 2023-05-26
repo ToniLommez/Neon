@@ -37,6 +37,8 @@ obj CTypes {
     }
 }
 
+
+
 // Biblioteca de Compatibilidade do C
 trait C {
     // Função de conversão de int para tipo C
