@@ -33,7 +33,7 @@ fn acao_aleatoria {
 
 fn main {
     let! player Character
-    player.name = "Player1"
+    play = player{"Player1", 0, 0}
 
     print "Bem-vindo ao jogo, {}!", char.name
   

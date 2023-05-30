@@ -24,7 +24,7 @@ fn range_pattern_matching(val: int) {
 }
 
 // Exemplo de pattern matching com listas
-fn list_pattern_matching(val: []) {
+fn list_pattern_matching(val: any[]) {
     case val
         of [] => print "A lista está vazia."
         of [head] => print "A lista tem um elemento: {}", head
