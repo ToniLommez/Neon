@@ -25,11 +25,10 @@ A linguagem de programação Neon representa um salto em direção a uma nova er
 - **Programação concorrente facilitada**: Conta com um sistema intuitivo de canais de comunicação para suporte a programação concorrente.
 - **Controle explícito de ownership**: Implementa um sistema de ownership para controle mais preciso da vida útil das variáveis.
 - **Imutabilidade por padrão e controle de permissões**: Implementa imutabilidade por padrão e oferece controle granular sobre as permissões de variáveis através de passagem por referência.
-- **Facilidade de interoperação*: Facilita a importação de código de outras linguagens, aprimorando a interoperação.
+- **Facilidade de interoperação**: Facilita a importação de código de outras linguagens, aprimorando a interoperação.
 - **Sistema de erros robusto**: Apresenta um sistema de erros com tratamento explícito, promovendo a robustez do código e a prevenção de falhas.
 
 Neon busca proporcionar uma plataforma eficiente e flexível para a criação de soluções de software altamente eficazes e personalizáveis, com foco na expressividade do código e na facilidade de leitura e escrita para o programador.
-
 
 ## Fase atual do projeto
 
@@ -41,8 +40,8 @@ Fique de olho em nosso repositório no GitHub para as últimas atualizações e 
 
 Como ainda estamos em fase de desenvolvimento iremos atualizar constantemente a distribuição das pastas do projeto, mas atualmente esta dividido entre:
 
-- Exemplos: Pseudo Codigo de referencia utilizado para criar a definição sintatica
-- Praticos: Codigos reais utilizando neon para visualização da linguagem em pratica
+- Sintaxe: Pseudo Codigo de referencia utilizado para criar a definição sintatica
+- Exemplos: Codigos reais utilizando neon para visualização da linguagem em pratica
 - Referencias: Referencias de implementação internas
 - Nyon: Especificações do mascote
 - TODO: A ser definido
