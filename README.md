@@ -30,6 +30,13 @@ A linguagem de programação Neon representa um salto em direção a uma nova er
 
 Neon busca proporcionar uma plataforma eficiente e flexível para a criação de soluções de software altamente eficazes e personalizáveis, com foco na expressividade do código e na facilidade de leitura e escrita para o programador.
 
+## Sobre nos:
+
+Somos dois estudantes de ciencia da computação de terceiro periodo na universidade Puc Minas, residentes de belo horizonte. Decidimos criar o neon de maneira completamente independente para desafiarnos e melhorarmos nossas habilidades de programação e como cientistas.
+
+- Toni Lommez
+- Bernardo Marques
+
 ## Fase atual do projeto
 
 Estamos atualmente na fase de desenvolvimento ativo do Neon. Estamos trabalhando para estabilizar a linguagem e construir uma comunidade de usuários. Por favor, note que, como estamos em desenvolvimento ativo, algumas funcionalidades podem mudar à medida que avançamos.
