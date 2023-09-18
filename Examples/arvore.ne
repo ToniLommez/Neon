@@ -1,5 +1,3 @@
-// DEFINIÇÃO INSTAVEL
-
 obj node {
     let value: int
     let left: node

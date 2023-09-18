@@ -16,11 +16,11 @@ fn main {
         if y is 3 
             => 5
         y*2
-    } 3 // tambem podera ser (3)
+    } 3 // passagem de argumento
 
     // Lambda funcional
     let f(x) = x + 3
-    print "{} {}", f(1), f 2
+    print "{} {}" (f 1) (f 2)
 
     // Lambdas funcionais sao apenas para aproximar a sintaxe
     // de uma linguagem funcional pura, os tipos serao implicitados

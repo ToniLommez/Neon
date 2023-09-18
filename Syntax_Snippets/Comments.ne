@@ -6,7 +6,8 @@
 /-/ esta é uma marcação de codigo depreciado
 /@/ aqui tem uma referencia de material extra
 /#/ TODO: aqui voce coloca implementações necessarias
-/⚠️/ para demonstrar que qualquer simbolo pode ser usado, mas não necessariamente recebera o highlight correto
+/🐬/ para demonstrar que qualquer simbolo pode ser usado, mas não necessariamente recebera o highlight correto
+/⚠️/ emoji com variacao de FEOF
 /~/ trexo de codigo experimental
 /*/ marcador de bug conhecido
 

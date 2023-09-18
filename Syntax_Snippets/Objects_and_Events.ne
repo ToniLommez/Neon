@@ -1,5 +1,5 @@
 obj Character {
-    name: string
+    pub name: string
     gemCount: int = 0
     hasSpecialGem: bool = False
 

@@ -2,18 +2,15 @@
 
 obj Node {
     value: int
-    next: Node
+    next: Node?
 }
 
 obj Stack {
-    head: Node
+    head: Node?
 
-    fn push(value: int) {
-        let new_node = Node { value, next: head }
-        head = new_node
-    }
+    fn! push(value: int) { head = Node { value, next: head } }
 
-    fn pop => int {
+    fn! pop => int {
         if head {
             let popped = head.value
             head = head.next
@@ -35,11 +32,7 @@ fn main {
     stack.push 2
     stack.push 3
 
-    let value = stack.pop
-    print "Popped value: {}", value
-
-    while not stack.is_empty {
-        let value = stack.pop
-        print "Popped value: {}", value
+    until stack.is_empty {
+        print "Popped value: {}", stack.pop
     }
 }

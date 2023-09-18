@@ -31,3 +31,12 @@ fn list_pattern_matching(val: any[]) {
         of [head, tail...] => print "A lista tem vários elementos. O primeiro é: {}", head
     else => print "Não é uma lista."
 }
+
+fn seila(x: any?, y: float) => int? {
+    case x
+        of nil -> print "é null"
+        of int if x > 3 | float -> print "é numero e tres"
+        of float | string -> print "valor = {}" x
+        of int -> print "é so int"
+    else => 3
+}

@@ -17,14 +17,12 @@
 // Observação: O uso da biblioteca de conversão "c_types" é opcional e depende das necessidades do seu código e da biblioteca externa utilizada.
 
 foreign "libc" from "c" using "c_types"{
-    fn printf(C.string, ...);
+    fn printf
 }
 
 fn main() {
     printf "Hello, %s!\n" "Neon"
 }
-
-
 
 // Biblioteca de Conversão para tipos C
 obj CTypes {
@@ -36,8 +34,6 @@ obj CTypes {
         v.raw.ptr
     }
 }
-
-
 
 // Biblioteca de Compatibilidade do C
 trait C {

@@ -37,7 +37,7 @@ fn main {
     } until x == 10
 
     let numbers = [1, 2, 3, 4, 5]
-    for x int, n in numbers { // uso de let opcional
+    for x: int, n in numbers { // uso de let opcional
         print "[{}]: {}\n", x, n
     }
 
@@ -45,25 +45,27 @@ fn main {
         print "{}\n", i
     }
 
-    pulse func_name {
-        print "acao executada em um marcador da funcao"
-    }
-
-    pulse before func_name {
+    pulse before foo {
         print "acao executada antes da funcao, que tem acesso as variaveis"
     }
 
-    pulse after func_name {
+    pulse after foo {
         print "acao executada depois da funcao, e tem acesso as variaveis"
     }
 
-    pulse until x < 3 {
-        print "O loop so continua quando alguma acao especificada (e assincrona) ocorrer"
+    pulse inside foo at #injection_point {
+        print "acao executada depois da funcao, e tem acesso as variaveis"
     }
 
     pulse 10 seconds {
-        print "mesma coisa do pulse func_name, mas esta preso a funcao nativa de contagem de tempo"
+        print "mesma coisa do pulse foo, mas esta preso a funcao nativa de contagem de tempo"
         print "aqui o interessante é que esta função pode ser presa a um contador de click/frames"
         print "mas este deve ser implementado pelo programador"
-    }
+    } // pode ser disparado como !> pulse ...
+}
+
+fn foo {
+    let x = 10
+    #injection_point
+    print x
 }

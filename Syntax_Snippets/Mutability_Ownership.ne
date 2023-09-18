@@ -4,7 +4,7 @@ fn add (x int, y int) => int {
 }
 
 // Função que aceita uma referência mutável
-fn inc(x int!) => int {
+fn inc(x int!) {
     x++
 }
 
@@ -29,11 +29,13 @@ fn main {
     // Variavel imutavel
     let y = 3
     foo y   // envia y como imutavel
+    inc y   // envia y como copia
+    inc y!  // erro de compilação
     foo y!  // envia y como mutavel (mas nao faz diferenca)
 
     // Ternario
     let bigger = if x > y then x else y
-    print "Bigger number: {byte}", bigger''
+    print "Bigger number: {byte}", bigger'
 
     // Ownership
     let result = add x' y' // x e y estao passando o ownership para result
