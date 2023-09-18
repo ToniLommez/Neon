@@ -45,27 +45,13 @@ fn main {
         print "{}\n", i
     }
 
-    pulse before foo {
-        print "acao executada antes da funcao, que tem acesso as variaveis"
-    }
+    // Injecao de codigo
 
-    pulse after foo {
-        print "acao executada depois da funcao, e tem acesso as variaveis"
-    }
+    pulse before hello_world { print "Hello" }
+    pulse inside hello_world @space { print ", " }
+    pulse after hello_world { println "World!" }
 
-    pulse inside foo at #injection_point {
-        print "acao executada depois da funcao, e tem acesso as variaveis"
-    }
+    fn hello_world = { @space }
 
-    pulse 10 seconds {
-        print "mesma coisa do pulse foo, mas esta preso a funcao nativa de contagem de tempo"
-        print "aqui o interessante é que esta função pode ser presa a um contador de click/frames"
-        print "mas este deve ser implementado pelo programador"
-    } // pode ser disparado como !> pulse ...
-}
-
-fn foo {
-    let x = 10
-    #injection_point
-    print x
+    hello_world
 }
