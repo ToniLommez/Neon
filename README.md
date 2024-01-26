@@ -67,5 +67,4 @@ Lembre-se de seguir nosso código de conduta ao contribuir. Estamos empenhados e
 ## Mascote
 
 A arte oficial ainda sera desenhada de maneira simplificada a partir do seguinte modelo gerado por ia:
-
-![Logo](nyon/nyon_9.jpg)
+![Logo](Mascot/Nyon.jpg)
